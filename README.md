@@ -2,8 +2,8 @@
 
 Senior blockchain engineer. I work at the intersection of **smart contract security** and **applied cryptography**.
 
-- Founding engineer on a Bitcoin↔EVM bridge that secured **$100M+** in production without a critical incident
-- Built a recoverable Threshold Signature Scheme (TSS) wallet in Go securing **$50M+** at a major exchange
+- Founding engineer on a Bitcoin↔EVM bridge that secured **$350M+** in production without a critical incident
+- Built a recoverable Threshold Signature Scheme (TSS) wallet in Go securing **$150M+** at a major exchange
 - Authored an open-source **BLS12-381** signature library used in production for validator aggregation
 - Currently going deep on **zero-knowledge proofs** — writing, reimplementing, and breaking things to understand them
 
