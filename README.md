@@ -1,34 +1,51 @@
-# Mahdi Darabi
+## Mahdi Darabi
 
-Senior blockchain engineer. I work at the intersection of **smart contract security** and **applied cryptography**.
+I build protocol and cryptographic infrastructure — bridges, wallets, and the
+cryptography underneath them.
 
-- Founding engineer on a Bitcoin↔EVM bridge that secured **$350M+** in production without a critical incident
-- Built a recoverable Threshold Signature Scheme (TSS) wallet in Go securing **$150M+** at a major exchange
-- Authored an open-source **BLS12-381** signature library used in production for validator aggregation
-- Currently going deep on **zero-knowledge proofs** — writing, reimplementing, and breaking things to understand them
+Founding engineer on **TeleSwap**, a Bitcoin↔EVM bridge that processed **$350M+**
+in cross-chain volume with zero critical incidents. I designed the trust model —
+validator collateral and slashing, a Bitcoin light client on EVM, Bitcoin-to-EVM
+messaging — and wrote the upgradeable Solidity contracts behind it.
 
-Based in Istanbul. Open to senior roles in protocol engineering, smart contract security, and applied cryptography (remote).
+After that I owned wallet infrastructure at a major exchange: a **threshold
+signature (TSS/MPC) custody system** in Go securing **$150M+ across 20+ chains**,
+with a fully distributed key recovery module built on secret sharing and BIP44.
 
----
+Most recently I shipped a **Zcash-style shielded pool** live on Sepolia.
 
 ### Selected work
 
-**Cryptography & ZK**
-- [`ecdsa-affine`](https://github.com/mahdiidarabi/ecdsa-affine) — reproduction of the 2025 Upbit ECDSA affine attack
-- [`cryptography-basics`](https://github.com/mahdiidarabi/cryptography-basics) — finite field implementations and a zero-knowledge circuit
-- [`@teleportdao/bls12-381`](https://www.npmjs.com/package/@teleportdao/bls12-381) — production BLS12-381 library (TypeScript)
+**[zcash-pour-contracts](https://github.com/mahdiidarabi/zcash-pour-contracts)** —
+Zcash-style shielded pool, live on Sepolia. circom circuit (4,612 constraints),
+generated Solidity verifier, subgraph, and a browser client that generates real
+Groth16 proofs in-tab. The [protocol doc](https://github.com/mahdiidarabi/zcash-pour-contracts/blob/main/docs/protocol.md)
+lists every way it's weaker than real Zcash, including the problems I haven't fixed.
+[Live demo](https://zcash-pour-contracts.vercel.app/)
 
-**Smart contracts & security**
-- [`ctf-buidl-guidl`](https://github.com/mahdiidarabi/ctf-buidl-guidl) — Solidity CTF solutions and exploit walkthroughs
+**[ctf-buidl-guidl](https://github.com/mahdiidarabi/ctf-buidl-guidl)** — Solidity
+CTF write-ups and exploit walkthroughs.
+
+**[DeFiHackLabs](https://github.com/SunWeb3Sec/DeFiHackLabs)** — contributed a
+proof-of-concept reproduction to the open-source DeFi exploit archive.
+
+**[ecdsa-affine](https://github.com/mahdiidarabi/ecdsa-affine)** — reproduction of
+the Upbit 2025 hack, showing how nonce and affine relationships enable key recovery.
+
+
 
 ### Writing
 
-I write about zero-knowledge proofs, signature schemes, and real-world cryptographic attacks — usually as a way of forcing myself to understand them properly.
+A four-part zkSNARK series built from first principles — mental models through
+R1CS/QAP/pairings to Groth16, with a TornadoCash reimplementation. Plus pieces on
+BLS aggregation, cross-chain messaging, and Bitcoin L2 architecture.
+→ [mahdidarabi.medium.com](https://mahdidarabi.medium.com)
 
-[mahdidarabi.medium.com](https://mahdidarabi.medium.com)
+### Working with
 
-### Reach me
+Go · TypeScript · Solidity · Hardhat · Foundry · circom · Python
 
-- [LinkedIn](https://linkedin.com/in/mahdi-darabi)
-- [X / Twitter](https://x.com/MadDiDrb)
-- mahdi.darabi.official@gmail.com
+Open to protocol, wallet infrastructure, and applied cryptography roles.
+Remote, contractor or full-time. Istanbul.
+
+[LinkedIn](https://linkedin.com/in/mahdi-darabi) · [X](https://x.com/MadDiDrb) · mahdi.darabi.official@gmail.com
